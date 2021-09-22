@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ turbo() }}
+    <meta charset="UTF-8">
+  <title>Predict Insurance Bill</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">  
+</head>
+    <body>
+        <h1>My Page</h1>
+        <form action="/testing/">
+            <input type="text" value="Click me" />
+        </form>
+        
+        <input type="text" id="textboxid" />
+
+        <form action="/my-link/">
+            <input type="submit" value="Test Button" />
+        </form>
+    
+    </body>
+    
+    <body>
+        {% include "loadavg.html" %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
